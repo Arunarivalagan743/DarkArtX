@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import React, { useState } from "react";
 import { FiShoppingCart, FiMenu, FiX, FiUser } from "react-icons/fi";
 import { FaHome, FaStore, FaInfoCircle, FaPhone } from "react-icons/fa";
@@ -15,7 +7,7 @@ export default function Header() {
   const [cartItems] = useState(3);
 
 return (
-    <header className="bg-gradient-to-r from-[#2460A7] via-[#85B3D1] to-[#B3C7D6] text-white h-20 px-4 flex justify-between items-center shadow-lg w-full fixed top-0 z-50">
+    <header className="bg-gradient-to-r from-[#2460A7] via-[#85B3D1] to-[#B3C7D6] text-white h-20 px-4 flex justify-between items-center shadow-lg w-full sticky top-0 z-50">
   
       <div className="flex items-center gap-x-4">
         <a
@@ -45,7 +37,7 @@ return (
         </div>
 
        
-        <nav className="hidden md:flex gap-x-6 lg:gap-x-8">
+        <nav className="hidden md:flex gap-x-6 md:gap-x-8">
           {[
             { name: "Home", icon: <FaHome /> },
             { name: "Shop", icon: <FaStore /> },

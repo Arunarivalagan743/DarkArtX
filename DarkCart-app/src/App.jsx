@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from "./components/Header";
+import Home from './pages/Home/Home';
  // Import the Header component
 
 export default function App() {
   return (
-   <Header />
+    <Home/>
   );
 }
