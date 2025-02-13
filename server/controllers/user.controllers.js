@@ -7,6 +7,7 @@ import { generatedAccessToken } from "../utils/generatedAccessToken.js";
 import { generatedRefreshToken } from "../utils/generatedRefreshToken.js";
 
 dotenv.config();
+
 export async function registerUserController(req, res) {
   try {
     const { name, email, password } = req.body;
