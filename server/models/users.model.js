@@ -14,7 +14,7 @@ const UserSchema = mongoose.Schema({
         type : String,
         required: [true,'Required'],
     },
-    avtar: {
+    avtar:{
         type : String,
         default : ''
     },
@@ -51,11 +51,11 @@ const UserSchema = mongoose.Schema({
         type : mongoose.Schema.ObjectId,
         ref  : 'order'
     }],
-    forget_password_otp:{
+    forgot_password_otp:{
         type:String,
         default: null
     },
-    forget_password_expiry:{
+    forgot_password_expiry:{
         type: Date,
         default: ""
     },

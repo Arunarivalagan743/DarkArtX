@@ -10,3 +10,4 @@ export const generatedRefreshToken = async(userId)=>{
     const updateRefreshToken = await UserModel.updateOne({_id : userId},{refresh_token:token})
     return token;
 }
+export default generatedRefreshToken
