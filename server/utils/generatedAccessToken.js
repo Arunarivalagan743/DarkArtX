@@ -9,3 +9,4 @@ export const generatedAccessToken = async(userId)=>{
 
     return token
 }
+export default generatedAccessToken
